@@ -1,0 +1,71 @@
+
+.staff_section{
+    background: url(../img/staff-people/background-staff.jpg);
+
+}
+
+.staff_section{
+    padding-top: 90px;
+    margin: 0 auto;
+}
+
+
+
+.staff-section-conreiner{
+    padding: 0 18px;
+}
+
+.staff_text{
+    text-align: center;
+    font-size: 20px;
+    font-family: Ubuntu;
+    color:rgba(255,255,255,0.67);
+    margin-bottom: 40px;
+}
+
+.CEO-staff{
+    color: #898989;
+    margin-bottom: 40px;
+    margin-top: -23px;
+}
+
+
+
+
+.staff_photo{
+    display: block;
+    width: 433px;
+    margin: auto;
+}
+
+.staff_title{
+    text-align: center;
+    font-size: 40px;
+    color: var(--main-color);
+    font-family: Barlow Condensed;
+
+} 
+
+.staff_header{
+    line-height:3;
+    font-family: 'Barlow Condensed', sans-serif;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 28px;
+    
+
+}
+.CEO-staff{
+    text-align: center;
+
+}
+
+.social-links{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,67 @@
+.offices__banner {
+    background-color: var(--offices-color);
+    min-height: 400px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.offices__text {
+    text-align: center;
+    color: var(--main-color);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 52px;     
+}
+
+.text__offices {
+    color: var(--offices-text-color);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.offices__image {
+    width: 450px;
+    padding: 10px;
+    cursor: pointer; 
+}
+
+.container__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+img {
+    border-radius: 7px;
+} 
+@media (min-width: 425px) {
+    .container__image {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        max-width: 425px;
+    }
+
+    /* .offices__image img {
+        width: 425px;
+        padding: 10px;
+        cursor: pointer; 
+
+    } */
+}
+
+@media (min-width: 1024px) {
+    .container__image {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+} 
+
+/* #carousel-offices {
+    margin: auto;
+    width: 500px;
+} */
+
+

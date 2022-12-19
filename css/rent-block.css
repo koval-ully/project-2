@@ -1,0 +1,80 @@
+.rent__banner {
+    background-image: url(../img/offices-sections/background-rent.png);
+    background-size: cover;
+    background-position: 30% 70%;
+    min-height: 610px;
+    padding-top: 130px;
+    padding-bottom: 135px;
+}
+
+.title {
+    letter-spacing: 3px;
+}
+
+.items_text {
+    color: var(--black-color);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+
+@media(min-width: 405) {
+    .button__container input {
+        display: inline;
+    }
+}
+
+.rent__banner .content__ren {
+    display: block;
+    width: 470px;
+    height: 375px;
+    margin: 20px;
+}
+
+.button__container {
+    display: flex;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+}
+
+.button__contacts {
+    width: 170px;
+    height: 50px;
+    background-color: var(--text-btn);
+    cursor: pointer;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    color: var(--main-color);
+}
+
+.button__contacts:hover {
+    background-color: var(--text-blue-color);
+    border: 1px;
+
+}
+
+.bestt__offer {
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    border: 1px solid var(--offices-color);
+    color: var(--offer-btn);
+}
+
+.bestt__offer:hover {
+    background-color: var(--offices-color);
+    color: var(--main-color);
+}

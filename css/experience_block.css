@@ -1,0 +1,187 @@
+:root{
+    --experience__cards-2010__color: rgb(2, 2, 4);
+    --experience__cards-2012__color: rgb(252, 252, 252);
+    --experience__cards-2015__color: rgb(5, 7, 28);
+    --experience__cards-2019__color:rgb(221, 226, 233);
+    --short-line__yellow-color: #f6c43d;
+    --short-line__blue-color: #1088e4;
+}
+@media (min-width: 768px) {
+    .experience-section {
+        padding-top: 50px;
+        padding-bottom: 105px;
+    }
+}
+
+@media (min-width: 992px) {
+    .experience-section {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 768px){
+    .experience-section {
+        padding: 0 32px;
+    } 
+}
+
+@media (max-width: 767px){
+    .experience-section__heading {
+        font-size: 40px;
+    } 
+}
+
+@media (min-width: 767px){
+    .experience-section__heading {
+        font-size: 52px;
+    } 
+}
+
+@media (min-width: 991px){
+    .experience-section__heading {
+        font-size: 65px;
+    } 
+}
+
+.experience-section__heading {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.empty {
+    width: 25%;
+}
+
+.heading_text {
+    text-align: center;
+    font-size: 20px;
+    font-family: Ubuntu;
+    color: var(--items_text-color);
+}
+
+.experience-section {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px;
+    word-break: break-word;
+    padding: 0px 24px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0 24px;
+    
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.experience-section__header {
+    text-align: center;
+    margin: 50px 0px 0px;
+    padding: 0px 15px;
+}
+
+.dark_cards {
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-top: 39px !important;
+    padding-bottom: 39px !important;
+    padding-left: 43px !important;
+    padding-right: 43px !important;
+}
+
+@media (min-width: 768px) {
+    .dark_cards {
+        display: flex;
+    }
+}
+
+.light_cards {
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    padding-top: 39px !important;
+    padding-bottom: 39px !important;
+    padding-left: 43px !important;
+    padding-right: 43px !important;
+}
+
+@media (min-width: 768px) {
+    .light_cards {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+#experience__cards-2010 {
+    background-color: var(--experience__cards-2010__color);
+}
+
+#experience__cards-2012 {
+    background-color: var(--experience__cards-2012__color);
+}
+
+#experience__cards-2015 {
+    background-color: var(--experience__cards-2015__color);
+}
+
+#experience__cards-2019 {
+    background-color: var(--experience__cards-2019__color);
+}
+
+.car_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 50%;
+    overflow: hidden;
+}
+
+.car_img_container {
+   display: block;
+   position: relative;
+   width: 100%;
+   height: auto;
+}
+
+.experience-section__text-content {
+    padding: 39px 43px;
+}
+
+.car-year-white {
+    font-size: 90px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--main-color);
+}
+
+.car-year-dark {
+    font-size: 90px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--experience__dark-cards__color);
+}
+
+.inner_text {
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--items_text-color);
+}
+
+.yellow__short-line {
+    width: 11%;
+    height: 3px;
+    background-color: var(--short-line__yellow-color);
+    position: relative;
+    display: block;
+    margin: 15px 0;
+}
+
+.blue__short-line {
+    width: 11%;
+    height: 3px;
+    background-color: var(--short-line__blue-color);
+    position: relative;
+    display: block;
+    margin: 15px 0;
+}

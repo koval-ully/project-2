@@ -1,0 +1,215 @@
+:root{
+    --top-manufacturers-background-color:#222222;
+}
+
+.top-manufacturers__section {
+  background-color: var(--top-manufacturers-background-color);
+  padding: 120px 0px 80px;
+}
+
+@media (min-width: 991px) {
+    .top-manufacturers__content {
+        display: flex;
+    }
+}
+
+.top-manufacturers__content {
+  padding: 0 24px;
+}
+
+@media (min-width: 991px) {
+    .top-manufacturers__content {
+      margin: 0 90px;  
+      padding: 0 140px;
+    }
+}
+
+@media (min-width: 768px) {
+  .top-manufacturers__content {
+        padding: 0 32px;
+    }
+}
+
+.top-manufacturers__section-header{
+    display: block;
+    padding: 0px 15px;
+}
+
+.heading_text {
+    display: block;
+    text-align: left;
+}
+
+.top-manufacturers__section__heading {
+    color: var(--main-color);
+}
+
+.top-manufacturers__section-header > .title {
+    text-align: left;
+}
+
+@media (max-width: 767px){
+    .top-manufacturers__section__heading {
+        font-size: 40px;
+    } 
+}
+
+@media (min-width: 767px){
+    .top-manufacturers__section__heading {
+        font-size: 52px;
+    } 
+}
+
+@media (min-width: 991px){
+    .top-manufacturers__section__heading {
+        font-size: 65px;
+    } 
+}
+
+ .top-manufacturers__section__heading {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+@media (min-width: 991px){
+    .top-manufacturers__container {
+      margin: auto;
+ }
+}
+
+@media (min-width: 991px){
+    .top-manufacturers__container {
+      width: 650px;
+ }
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider__item-container {
+  background-color: rgb(255, 255, 255, 0.06);
+  margin: 10px;
+}
+
+.slider__item-content {
+  padding: 30px;
+}
+
+.slider_disable-transition {
+  transition: none;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .slider__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 991px) {
+  .slider__item {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  background: rgb(0 0 0 / 20%);
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider__control_hide {
+  display: none;
+}
+
+.slider__control[data-slide="prev"] {
+  left: 0;
+}
+
+.slider__control[data-slide="next"] {
+  right: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  background: rgb(0 0 0 / 30%);
+  outline: 0;
+}
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control[data-slide="prev"]::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide="next"]::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-right: 15%;
+  margin-bottom: 0;
+  margin-left: 15%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.slider__indicators li {
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+  margin-left: 7px;
+  text-indent: -999px;
+  background-color: rgb(255 255 255 / 50%);
+  background-clip: padding-box;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.slider__indicators li.active {
+  background-color: rgb(255 255 255 / 90%);
+}

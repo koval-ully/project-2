@@ -1,0 +1,224 @@
+.cards__button {
+    display: block;
+    width: 60%;
+    height: 40px;
+    background-color: #f6c43d;
+    cursor: pointer;
+    border: none;
+    margin-top: 100px;
+    border-radius: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 100px;
+    color: var(--main-color);
+}
+
+.cards__button:hover {
+    background-color: #1088e4;
+    border: 1px;
+}
+
+@media (min-width:1140px) {
+    .cards {
+        background-color: var(--bg-color);
+        width: 980px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards__button {
+        display: block;
+        width: 60%;
+        height: 40px;
+        background-color: #f6c43d;
+        cursor: pointer;
+        border: none;
+        margin-top: 100px;
+        border-radius: 40px;
+        text-align: center;
+        font-weight: bold;
+        margin: auto;
+        margin-top: 100px;
+        color: var(--main-color);
+    }
+
+    cards__button:hover {
+        background-color: #1088e4;
+        border: 1px;
+
+    }
+
+    .card img {
+        margin: auto;
+        height: 200px;
+        width: 309px;
+        margin-top: 25px;
+        padding: 6px;
+    }
+
+    .cards .card {
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        height: 586px;
+        width: 370px;
+        background-color: white;
+        text-align: center;
+        border: none;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .tabs__subtitle h3 {
+        font-size: 10px;
+    }
+
+    .card h2,
+    h3 {
+        padding: 10px;
+    }
+
+    .card h3 {
+        padding: 5px;
+        color: var(--items_text-color);
+    }
+
+}
+
+.cards {
+    background-color: var(--bg-color);
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img {
+    margin: auto;
+    height: 200px;
+    width: 309px;
+    margin-top: 25px;
+    padding: 6px;
+}
+
+.cards .card {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    height: 586px;
+    width: 370px;
+    background-color: white;
+    text-align: center;
+    border: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card h2,
+h3 {
+    padding: 10px;
+
+}
+
+@media (min-width:320px) {
+    .cards {
+        width:100% ;
+        flex-direction: column;
+        
+      
+
+    }
+
+    .cards .card {
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        height: 586px;
+        width: 320px;
+
+        background-color: white;
+        text-align: center;
+        border: none;
+        margin-left: 0;
+        margin-right: 0;
+        margin: auto;
+    }
+
+    .card h3 {
+        font-size: 17px;
+        padding: 5px;
+        color: var(--items_text-color);
+    }
+
+}
+
+@media (min-width:425px) {
+    .cards {
+        min-width: 425px;
+        flex-direction: column;
+    }
+
+    .card h3 {
+        padding: 5px;
+        color: var(--items_text-color);
+    }
+}
+
+@media (min-width:768px) {
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards .card {
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        height: 586px;
+        width: 370px;
+        background-color: white;
+        text-align: center;
+        border: none;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .card h3 {
+        padding: 5px;
+        color: var(--items_text-color);
+    }
+}
+
+@media (min-width:1024px) {
+
+    .cards {
+        background-color: var(--bg-color);
+        max-width: 1024px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .cards .card {
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        height: 586px;
+        width: 370px;
+        background-color: white;
+        text-align: center;
+        border: none;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .cards__subtitle h3 {
+        font-size: 17px;
+        padding: 5px;
+        color: var(--items_text-color);
+    }
+}
